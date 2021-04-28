@@ -371,3 +371,37 @@ function previouspage() {
       "rgb(227, 227, 229)";
   }
 }
+
+document.querySelector("#next").addEventListener("click", postdata);
+
+function postdata() {
+  var url = "https://ezone-4491.restdb.io/rest/ezone";
+  var key = "32e6dd2cfb967e015898fb0d5313a3b2c3cb1";
+
+  var password = document.querySelector("#password").value;
+  var fullname = document.querySelector("#password").value;
+  var email = document.querySelector("#password").value;
+  var dateofbirth = document.querySelector("#password").value;
+  var gamertag = document.querySelector("#password").value;
+
+  const data = {
+    password: password,
+    fullname: fullname,
+    email: email,
+    gamertag: gamertag,
+    date: dateofbirth,
+  };
+
+  const postData = JSON.stringify(data);
+  fetch(url, {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "x-apikey": "32e6dd2cfb967e015898fb0d5313a3b2c3cb1",
+      "cache-control": "no-cache",
+    },
+    body: postData,
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+}
