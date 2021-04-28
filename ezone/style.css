@@ -17,7 +17,7 @@ body {
     " sidebar main main main main main main main ";
   padding: 0em 10em;
   font-family: roboto;
-    background: url(bg.png);
+    background: url(./bg.png);
 }
 
 #logo {
