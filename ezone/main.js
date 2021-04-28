@@ -107,9 +107,9 @@ function nextpage() {
       }, 500);
       // Changes the text above and next to the form
       document.querySelector("#signup").textContent =
-        "Text to show above form at page2";
+        "WHAT TYPES OF GAMES DO YOU PLAY?";
       document.querySelector("#guide > h2").textContent =
-        "text on the right on page2";
+        "WE WILL HELP YOU IMPROVE YOU GAMING SKILLS";
       // changes the color of dots and sidebar
       document.querySelector("#dot2").style.background = "var(--purple-color)";
       document.querySelector("#sidebar > li:nth-child(3)").style.background =
@@ -188,9 +188,9 @@ function nextpage() {
 
       // Changes the text above and next to the form
       document.querySelector("#signup").textContent =
-        "Text to show above form at page3";
+        "WHAT SKILLS DO YOU WANT TO IMPROVE?";
       document.querySelector("#guide > h2").textContent =
-        "text on the right on page3";
+        "WE WILL HELP YOU IMPROVE YOU GAMING SKILLS";
       // changes the color of dots and sidebar
       document.querySelector("#dot3").style.background = "var(--purple-color)";
       document.querySelector("#sidebar > li:nth-child(3)").style.background =
@@ -268,10 +268,16 @@ function nextpage() {
       document.querySelector("#next").style.display = "none";
       document.querySelector("#previous").style.display = "none";
       // Changes the text above and next to the form
+        document.querySelector("h1").style.display = 'none'
+         document.querySelector("#form-container").style.display = 'none'
+         document.querySelector("#buttons").style.display = 'none'
+        document.querySelector('#maindiv').style.gridTemplateColumns = '0% 100%'
+        document.querySelectorAll('li').forEach(e=>e.style.background='#3f3f50')
       document.querySelector("#signup").textContent =
-        "Text to show above form at page4";
+        "thanks for joining ezone";
+
       document.querySelector("#guide > h2").textContent =
-        "text on the right on page4";
+        "thanks for joining ezone";
     }
   }
 }
