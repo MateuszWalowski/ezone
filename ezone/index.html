@@ -22,9 +22,7 @@
         <section id="form-container">
             <!-- the forms that are not shown have display for now -->
             <form id="page1" class="activepage">
-            <center>
-                <div class="circle"></div>
-            </center>
+
 
                 <label for="">Full Name</label>
                 <input id="fullname" type="text">
@@ -47,60 +45,36 @@
 
                 <label for="">Repeat Password</label>
                 <input id="repeatpassword" type="text">
+<p  id="fillthefieldspage1" style="color: red;"></p>
 
             </form>
             <form id="page2"  class="choices" style="display:none">
                 <!-- use the json file "data" to create the buttons dynamically
                 probably by using a for each loop -->
                 <!-- the chosen class show buttons that are clicked -->
-                <button class="choose chosen">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
-                <button class="choose">Battle Royale</button>
+                <select id="genre" multiple="multiple">
+                    <option class="choose" value="FPS">FPS</option>
+                    <option class="choose" value="MMORPG">MMORPG</option>
+                    <option class="choose" value="Sports">Sports</option>
+                    <option class="choose" value="Racing">Racing</option>
+                    <option class="choose" value="RTS">RTS</option>
+                </select>
+                <p  id="fillthefieldspage2" style="color: red;"></p>
 
 
 
             </form>
             <form id="page3" class="show choices" style="display:none">
 
-                <button class="choose chosen">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
-                <button class="choose">Hearing</button>
+                <select id="areas" multiple="multiple">
+                    <option class="choose" value="Hand/eye coordination">Hand/eye coordination</option>
+                    <option class="choose" value="Reaction time">Reaction time</option>
+                    <option class="choose" value="Hearing">Hearing</option>
+                    <option class="choose" value="Vision">Vision</option>
+                    <option class="choose" value="Communication">Communication</option>
+                </select>
+                <p  id="fillthefieldspage3" style="color: red;"></p>
+
             </form>
             <div id="thanks" style="display: none;"> Thank you for signing that form</div>
 

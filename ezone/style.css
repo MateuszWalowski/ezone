@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-  --dark-color: #3F3F50;
-  --green-color: #AFF8BD;
-  --gray-color: #E3E3E5;
-  --purple-color: #510CDC;
+  --dark-color: #3f3f50;
+  --green-color: #aff8bd;
+  --gray-color: #e3e3e5;
+  --purple-color: #510cdc;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
     " sidebar main main main main main main main ";
   padding: 0em 10em;
   font-family: roboto;
-  background: #E3E3E5;
+  background: #e3e3e5;
 }
 
 #logo {
@@ -42,7 +42,7 @@ body {
   border-radius: 10px;
 }
 
-#maindiv>* {
+#maindiv > * {
   border-radius: 10px;
 }
 
@@ -67,10 +67,7 @@ h1 {
 #form-container {
   grid-area: form;
   height: 60vh;
-
 }
-
-
 
 label {
   color: black;
@@ -139,14 +136,13 @@ form {
   width: 100%;
 }
 
-.choose:first-child {
+/* .choose:first-child {
   margin-left: 150px;
 }
 
 .choose:nth-child(10n) {
-
   margin-left: 150px;
-}
+} */
 
 #buttons {
   grid-area: buttons;
@@ -156,8 +152,6 @@ form {
   align-items: center;
   justify-content: space-evenly;
 }
-
-
 
 .switch {
   color: var(--purple-color);
@@ -172,7 +166,6 @@ form {
 }
 
 #next {
-
   border: 2px solid var(--purple-color);
 }
 
@@ -217,8 +210,9 @@ ul {
   position: relative;
   overflow: hidden;
 }
-ul:before, .on:after {
-  content: '';
+ul:before,
+.on:after {
+  content: "";
   width: 100%;
   border: 2px solid white;
   position: absolute;
@@ -240,12 +234,22 @@ li {
   text-align: center;
   line-height: 2em;
   border-radius: 20px;
-  background: #E3E3E5;
+  background: #e3e3e5;
   margin: 0 1em;
   display: inline-block;
   color: white;
   border: 1px solid white;
 }
 .on ~ li {
-  background: #FFB595;
+  background: #ffb595;
+}
+
+select {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: visible;
+  border: none;
 }
