@@ -17,15 +17,21 @@ body {
     " sidebar main main main main main main main ";
   padding: 0em 10em;
   font-family: roboto;
-    background: url(./bg.png);
 }
 
 #logo {
   display: flex;
   height: 10vh;
+  width: 100%;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
   grid-area: logo;
+}
+
+#logo img {
+  width: 100px;
 }
 
 #maindiv {
@@ -157,6 +163,14 @@ form {
   justify-content: space-evenly;
 }
 
+.toScaleHover {
+  animation-duration: 0.5s;
+}
+
+.toScaleHover:hover{
+  transform: scale(1.02);
+}
+
 .switch {
   color: var(--purple-color);
   text-transform: uppercase;
@@ -176,6 +190,21 @@ form {
 #dots {
   display: flex;
   gap: 0.5em;
+}
+
+svg{
+  position: absolute;
+  z-index: -2;
+  fill: #510CDC;
+}
+
+#svg1 {
+  transform: translateX(-250px);
+}
+
+#svg2{
+  right: 0;
+  bottom: 0;
 }
 
 .dot {
