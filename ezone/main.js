@@ -109,7 +109,7 @@ function nextpage() {
       document.querySelector("#signup").textContent =
         "WHAT TYPES OF GAMES DO YOU PLAY?";
       document.querySelector("#guide > h2").textContent =
-        "WE WILL HELP YOU IMPROVE YOU GAMING SKILLS";
+        "WE WILL HELP YOU IMPROVE YOUR GAMING SKILLS";
       // changes the color of dots and sidebar
       document.querySelector("#dot2").style.background = "var(--purple-color)";
       document.querySelector("#sidebar > li:nth-child(3)").style.background =
@@ -190,7 +190,7 @@ function nextpage() {
       document.querySelector("#signup").textContent =
         "WHAT SKILLS DO YOU WANT TO IMPROVE?";
       document.querySelector("#guide > h2").textContent =
-        "WE WILL HELP YOU IMPROVE YOU GAMING SKILLS";
+        "WE WILL HELP YOU IMPROVE YOUR GAMING SKILLS";
       // changes the color of dots and sidebar
       document.querySelector("#dot3").style.background = "var(--purple-color)";
       document.querySelector("#sidebar > li:nth-child(3)").style.background =
@@ -268,11 +268,13 @@ function nextpage() {
       document.querySelector("#next").style.display = "none";
       document.querySelector("#previous").style.display = "none";
       // Changes the text above and next to the form
-        document.querySelector("h1").style.display = 'none'
-         document.querySelector("#form-container").style.display = 'none'
-         document.querySelector("#buttons").style.display = 'none'
-        document.querySelector('#maindiv').style.gridTemplateColumns = '0% 100%'
-        document.querySelectorAll('li').forEach(e=>e.style.background='#3f3f50')
+      document.querySelector("h1").style.display = "none";
+      document.querySelector("#form-container").style.display = "none";
+      document.querySelector("#buttons").style.display = "none";
+      document.querySelector("#maindiv").style.gridTemplateColumns = "0% 100%";
+      document
+        .querySelectorAll("li")
+        .forEach((e) => (e.style.background = "#3f3f50"));
       document.querySelector("#signup").textContent =
         "thanks for joining ezone";
 
